@@ -42,3 +42,21 @@ if (menuLinks.length > 0) {
         }
 }
 
+// Меняем класс body при нажатии кнопки
+
+const translateButtonEn = document.querySelector('.translate_button_en')
+const translateButtonRu = document.querySelector('.translate_button_ru')
+
+if (translateButtonEn) {
+    translateButtonEn.addEventListener('click', e => {        
+            document.body.classList.remove('eng')
+            document.body.classList.add('rus')        
+    })
+}
+
+if (translateButtonRu) {
+    translateButtonRu.addEventListener('click', e => {        
+            document.body.classList.remove('rus')
+            document.body.classList.add('eng')        
+    })
+}
