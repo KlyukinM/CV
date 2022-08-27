@@ -1,5 +1,17 @@
 'use strict'
+// Показываем загруженный контент
+window.onload = function () {
+    let hideElement = document.querySelector('.hide')
+    let loadingPage = document.querySelector('.loader')
 
+    if (hideElement) {
+        hideElement.classList.remove('hide')
+    }
+
+    if (loadingPage) {
+        loadingPage.classList.add('hide')
+    }
+}
 
 // Прокрутка при клике
 
