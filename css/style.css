@@ -117,27 +117,26 @@ body.eng .translate_button_ru {
 
 .menu button {
     margin-left: 9px;
-    
+    transition: all 0.3s ease 0s;
 }
 
 .rus_eng_button button {
     justify-content: flex-end;
     margin-right: 9px;
-    transition: all 0.5s ease 0s;  
+    transition: all 0.3s ease 0s;  
 }
 
 button {
     background-color: transparent;
     text-transform: uppercase; 
-    font-weight: bold;
-    transition: all 0.3s ease 0s;   
+    font-weight: bold;       
     padding: 5px 7px;
     border-radius: 7px;
 }
 
 button:hover {
-    background-color: rgba(35, 39, 50, 0.2);
-    
+    /* background-color: rgba(35, 39, 50, 0.2);     */
+    color: #fff;
 }
 
 .rus_eng_button {
@@ -192,7 +191,7 @@ button:hover {
     transition: all 0.8s ease 0s;    
 }
 
-.photo:hover {
+.sidebar:hover .photo {
     transform: scale(1.2);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
@@ -237,6 +236,13 @@ button:hover {
     color: #232732;
 }
 
+/* .main_nameandlinks:hover .mainlinks li.location::before,
+.main_nameandlinks:hover .mainlinks li.phone::before,
+.main_nameandlinks:hover .mainlinks li.mail::before {
+    transform: scale(1.3);
+    box-shadow: 0 0 5px rgba(35, 39, 50, 0.7); 
+} */
+
 .main_name {
     flex: 1 1 70%;
     min-width: 200px;
@@ -268,8 +274,10 @@ button:hover {
     position: absolute;    
     width: 20px;
     height: 20px;
+    border-radius: 50%;
     top: 8px;
     left: 0;
+    transition: all 0.3s ease 0s;
 }
 
 .mainlinks li.location::before {    
@@ -295,6 +303,11 @@ button:hover {
     padding-bottom: 20px;
 }
 
+/* .main_skills:hover .main_skills_list li::before {
+    transform: scale(1.3);
+    box-shadow: 0 0 5px rgba(35, 39, 50, 0.7); 
+} */
+
 .title {
     font-size: 24px;
     text-transform: uppercase;
@@ -319,8 +332,10 @@ button:hover {
     width: 10px;
     height: 10px;
     border-radius: 50%;
+    border: 1px solid #232732;
     left: 5px;
     top: 13px;    
+    transition: all 0.3s ease 0s;
 }
 
 .main_skills_list p {
@@ -348,6 +363,12 @@ button:hover {
 .main_projects_container {    
     border-bottom: 2px solid #dab202;
     padding-bottom: 20px;    
+}
+
+.project:hover img.web, 
+.project:hover img.git {
+    transform: scale(1.3); 
+    box-shadow: 0 0 10px rgba(35, 39, 50, 0.7); 
 }
 
 .project {
